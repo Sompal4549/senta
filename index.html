@@ -292,14 +292,15 @@
         border-radius: 100% / 20%;
       }
       .centerText {
-        text-align: center;
+        /* text-align: center; */
         font-family: "Courier New", Courier, monospace;
-        font-size: 4rem;
-        padding: 60px 20px;
-        color: white;
+        font-size: 3rem;
+        padding: 50px 30px;
+        color: red;
+        z-index: 13;
         font-weight: 700;
         position: absolute;
-        top: 0;
+        top: 0px;
         right: 0;
         left: 0;
       }
@@ -312,30 +313,7 @@
         background-color: rgba(250, 250, 250, 0.9);
         /* z-index: 10; */
         z-index: 8;
-        height: 50vh;
-      }
-      .moon {
-        z-index: 11;
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        background-color: #ffffff;
-        top: 25px;
-        right: 50px;
-        border-radius: 100%;
-      }
-      .moon::before {
-        position: absolute;
-        content: "";
-        top: 5px;
-        right: -19px;
-        /* left: 10px; */
-        width: 150px;
-        height: 75px;
-        background-color: rgb(0, 0, 0, 0.3);
-        border-radius: 150px 150px 0 0;
-        z-index: 13;
-        transform: rotate(30deg);
+        height: 500px;
       }
     </style>
   </head>
@@ -355,6 +333,5 @@
       </div>
     </div>
     <div class="snow"></div>
-    <div class="moon"></div>
   </body>
 </html>
